@@ -103,12 +103,11 @@
                     <div class="col-md-6 col-md-offset-3">
                         <h2>Um pouco sobre mim</h2>
                         <img src="assets/img/lines.svg" class="img-lines" alt="lines">
-                        <p>Olá sou o felipe, tenho 20 anos, estou no caminho para ser desenvolvedor Full-Stack programo no frond-end usando html, css, javascript puro e além disso uso o boostrap. Na parte de back-end uso o PHP e banco de dados Mysql.
-                        Comecei a fazer a faculdade em 2020, atualmento estou no 3° semestre de Análise e Desenvolvimento de Sistemas na Universidade Nove Julho (Uninove), faço curso complementar de desenvolvedor full stack na Danki Code, tenho formação em Inglês Pré-Avançado, com duração de 3 anos(2017 - 2019).
-                        Estou à procura de uma vaga para área de tecnologia, para colocar em prática meu aprendizado.
-                        Desejo fazer parte do time, sou uma pessoa dedicada, confiante e comprometida com as atribuições dadas a mim.
+                        <p>Olá sou o felipe, tenho 20 anos, sou desenvolvedor Full-Stack programo no frond-end usando html, css, javascript puro e além disso uso o boostrap. Na parte de back-end uso o PHP e banco de dados Mysql.
+                        Atualmento estou no 4° semestre de Análise e Desenvolvimento de Sistemas na Universidade Nove Julho (Uninove), faço curso complementar de desenvolvedor full stack na Danki Code, tenho formação em Inglês Pré-Avançado, com duração de 3 anos(2017 - 2019).
+                            
                         </p>
-                        <a href="/assets/img/curriculo Felipe2.pdf" class="btn btn-fill" download>Download do meu currículo</a>
+                        
                     </div>
                 </div>
             </div>
@@ -166,6 +165,12 @@
                             <h4>Git</h4>
                             <div class="progress">
                                 <div style="width: 10%;" class="progress-bar" role="progressbar"></div><!-- /.progress-bar -->
+                            </div><!-- /.progress -->
+                        </div><!-- /.skill -->
+                        <div class="skill">
+                            <h4>Node</h4>
+                            <div class="progress">
+                                <div style="width: 30%;" class="progress-bar" role="progressbar"></div><!-- /.progress-bar -->
                             </div><!-- /.progress -->
                         </div><!-- /.skill -->
                     </div>
@@ -270,6 +275,16 @@
                                 <h4>Calculadora</h4>
                                 <a href="#" data-toggle="modal" data-target="#portfolioItem6"><i class="fas fa-eye"></i></span></a>
                                
+                            </div><!-- /.portfolio-item-info -->
+                        </div><!-- /.portfolio-item -->
+                    </div>
+                    <div class="col-md-4 col-xs-6">
+                        <div class="portfolio-item">
+                            <img src="assets/img/saboroso.png" class="img-res" alt="">
+                            <div class="portfolio-item-info">
+                                <h4>Restaurante Saboroso</h4>
+                                <a href="#" data-toggle="modal" data-target="#portfolioItem7"><i class="fas fa-eye"></i></a>
+                          
                             </div><!-- /.portfolio-item-info -->
                         </div><!-- /.portfolio-item -->
                     </div>
@@ -417,24 +432,58 @@
       </div><!-- /.modal-dialog -->
     </div><!-- /.modal -->
 
-    <div id="portfolioItem6" class="modal fade" role="dialog">
+    <div id="portfolioItem7" class="modal fade" role="dialog">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
              <a class="close" data-dismiss="modal"><i class="fas fa-times"></i></a>
-            <img class="img-res" src="assets/img/projeto3.png" alt="">
+            <img class="img-res" src="assets/img/saboroso.png" alt="">
           </div>
           <div class="modal-body">
-            <h4 class="modal-title">Calculadora</h4>
-            <p>Projeto feito para treinar minhas habilidades</p>
-            <p>Calculadora feita em Javascript Orientado a Objetos</p>
+            <h4 class="modal-title">Restaurante Saboroso</h4>
+                <h2>Como foi feito esse sistema?</h2>
+                <p>Na parte do Frond-end nós usamos o tradicional html5, css3 e javascript, o site é todo responsivo cada página
+
+                    Na parte do Back-end é onde faz todo o sistema funcionar, usamos o poder do node junto com o express trabalhando com rotas, banco de dados mysql, formidable para envio de formulários e uplod de imagens e para tudo isso utilizando a engine EJS.</p>
+
+                <h2>O que é a Engine EJS?</h2>
+                <p>O EJS é uma engine de visualização, com ele conseguimos de uma maneira fácil e simples transportar dados do back-end para o front-end, basicamente conseguimos utilizar códigos em javascript no html de nossas páginas.</p>
+                <h2>O que oferecemos em nosso site</h2>
+                <p>O projeto restaurante saboroso é a idéia de um site mostrando os serviços que este restaurante oferece, no site também é possível cadastrar seu email para receber novidades do restaurante, você pode mandar uma mensagem passando seu feedback para nós na aba de contatos, na aba menu é possível ver nosso cardapio e esse cardapio é adicionado no site através no painel de controle e na aba reservas e na home você pode fazer uma reserva através do nosso site passando sua indentidade, o dia e o horário da sua reserva.</p>
+                <h2>O que nosso painel de controle consegue fazer ?</h2>
+                <p>Para acessar o painel é necessário fazer um login então nessa parte trabalhamos com as session em node, para usar session é necessário baixar algumas dependência via terminal com o npm ou yarn o comando é: npm install express-session talvez precise do RedisStore.
+
+                    Depois que acessa o painel lá é possível ver quantas reservas foram feitas, quantos emails foram cadastrados, quantos contatos foram enviados para nós, quantos itens tem no menu e quantos usuários podem acessar aquele painel e também conseguimos listar os dados que os usuários preencheu no site para poder editar ou excluir esses dados, em todas abas tem como editar e excluir as linhas que contém os dados para fazer isso tem um botão para cada ação.</p>
+                    <p>No painel na aba usuários tem um botão alterar senha nesse botão tem todo aquele sistema de esqueceu sua senha, lá pede para o usuário digitar uma nova senha e confirmar em baixo e tem a validação se caso as senhas não forem iguais nos dois inputs vai gerar um erro.
+
+                        Na aba menus e reservas é possível fazer um novo cadastro então usamos o insert para fazer essa ação.</p>
           </div>
+          
           <div class="modal-footer">
-            <a href="https://github.com/Felipe-Alves-Augusto/Calculadora" class="btn btn-fill">Ver código</a>
+            <a href="https://github.com/Felipe-Alves-Augusto/Restaurante-Saboroso" class="btn btn-fill">Ver código</a>
           </div>
         </div><!-- /.modal-content -->
       </div><!-- /.modal-dialog -->
     </div><!-- /.modal -->
+    <div id="portfolioItem6" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+               <a class="close" data-dismiss="modal"><i class="fas fa-times"></i></a>
+              <img class="img-res" src="assets/img/projeto3.png" alt="">
+            </div>
+            <div class="modal-body">
+              <h4 class="modal-title">Calculadora</h4>
+              <p>Projeto feito para treinar minhas habilidades</p>
+              <p>Calculadora feita em Javascript Orientado a Objetos</p>
+            </div>
+            
+            <div class="modal-footer">
+              <a href="https://github.com/Felipe-Alves-Augusto/Calculadora" class="btn btn-fill">Ver código</a>
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
     <footer class="text-center">
         <p>2021 - Todos os Direitos Reservados</p>
     </footer>
